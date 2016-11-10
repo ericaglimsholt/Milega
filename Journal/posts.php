@@ -7,9 +7,14 @@
 
 <?php
 // Error message
-if ($error) {
+    if ($error) {
       print '<h4 style="color:red; font-weight:bold;">'.$error.'</h4>';
       unset($_SESSION["error"]);
+    }
+
+    if ($message) {
+      print '<h4 style="color:red; font-weight:bold;">'.$message.'</h4>';
+      unset($_SESSION["message"]);
     }
 ?>
 
