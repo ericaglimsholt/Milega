@@ -21,11 +21,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   }
 }
 
-// Error message
-
 $error = $_SESSION["error"] ?? "";
 $message = $_SESSION["message"] ?? "";
 
+// Error message
     if ($error) {
       print '<h4 style="color:red; font-weight:bold;">'.$error.'</h4>';
       unset($_SESSION["error"]);
