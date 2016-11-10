@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Journal</title>
+    <title>Reflection journal</title>
   </head>
   <body>
 <h1>Write something and we will save it</h1>
@@ -14,17 +14,3 @@
 
   </body>
 </html>
-
-<?php
-$errorMessage = "";
-
-if(isset($_POST['submit'])) {
-  if(empty($_POST['title']) || empty($_POST['content'])) {
-    print "Du måste fylla i alla fält :)";
-  }
-}
-
-
-
-
- ?>
