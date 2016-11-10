@@ -20,3 +20,9 @@ function dbGet($connection, $query, $single = false)
   mysqli_free_result($result);
   return $data;
 }
+
+// Return the results
+function dbPost($connection, $query)
+{
+  return mysqli_query($connection, $query);
+}
