@@ -1,0 +1,17 @@
+div {
+  position: fixed;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.left {
+  left: 0;
+  background-color: white;
+}
+
+.right {
+  right: 0;
+  background-color: #D8D8D8;
+  overflow-y: auto;
+}
