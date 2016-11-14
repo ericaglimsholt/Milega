@@ -15,3 +15,7 @@ div {
   background-color: #D8D8D8;
   overflow-y: auto;
 }
+
+h1 {
+  text-align: center;
+}
