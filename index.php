@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/style/style.css">
     <title>Milega</title>
 
   </head>
