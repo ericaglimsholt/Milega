@@ -40,19 +40,23 @@ h1 {
   /*letter-spacing: 3px;*/
   /*text-transform: uppercase;*/
   color: #DA6965;
+  font-weight: bold;
 }
 
 h2 {
   text-align: left;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'DIN Alternate', sans-serif;
   font-weight: 100;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font-size: 14px;
+  /*letter-spacing: 3px;*/
+  /*text-transform: uppercase;*/
+  font-size: 26px;
   margin-top: 20px;
   padding-left: 30px;
   background-color: #9CCAC7;
-
+  color: white;
+  border-radius: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
 }
 
