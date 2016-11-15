@@ -1,5 +1,5 @@
 <?php
-  include('functions.php');
+  include('assets/php/functions.php');
 	session_start();
 	$message = $_SESSION["message"] ?? "";
 	$error = $_SESSION["error"] ?? "";

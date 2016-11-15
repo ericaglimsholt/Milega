@@ -21,12 +21,6 @@ function dbGet($connection, $query, $single = false)
   return $data;
 }
 
-// Return the results
-function dbPost($connection, $query)
-{
-  return mysqli_query($connection, $query);
-}
-
 
 //CARLS PRYLAR
 
