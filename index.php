@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
     <title>Milega</title>
 
   </head>
@@ -34,12 +34,8 @@
 
       <ul>
         <li><a href="#">Kursmaterial</a></li>
-        <li><a href="#">Arkiv</a></li>
-        <li><a href="#">Skriv nytt</a>
-          <ul>
-            <li><a href="#">Nytt mål</a></li>
-            </ul
-        </li>
+        <li><a href="#">Reflektioner</a></li>
+        <li><a href="#">Mål</a></li>
         <li><a href="#">Hem</a></li>
       </ul>
 
