@@ -12,3 +12,16 @@ function registerPost($connection, $title, $content)
     return true;
   }
 }
+
+function insertGoals($connection, $content) {
+	$date = date('Y-m-d H:i:s');
+	if (dbPost($connection,"INSERT INTO goals (goalDate goalContent) VALUES ('$date', '$content')")) {
+		session_start();
+		$_SESSION['message'] = 'Ditt mål är sparat';
+		return true;
+	}
+
+
+	return false;
+
+}

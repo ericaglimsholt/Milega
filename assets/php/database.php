@@ -26,3 +26,14 @@ function dbPost($connection, $query)
 {
   return mysqli_query($connection, $query);
 }
+
+
+//CARLS PRYLAR
+
+function dbPost($connection, $query) {
+  $result = mysqli_query($connection, $query);
+  if (!$result) {
+    die(var_dump(mysqli_error($connection)));
+  }
+  return $result;
+}
