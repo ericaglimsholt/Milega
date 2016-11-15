@@ -21,7 +21,7 @@
   </head>
   <body>
 
-    <form action="handlegoals.php" method="post">
+    <form action="assets/php/handlegoals.php" method="post">
 
       <label for="vision">Det här vill jag med mitt ledarskap (vision):</label>
       <br>
