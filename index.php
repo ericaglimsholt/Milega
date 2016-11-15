@@ -1,12 +1,9 @@
 
 <html>
   <head>
-    <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
-
-    <title>Milega</title>
+    <?php
+			require('assets/php/templates/head.php');
+		?>
 
   </head>
   <body>
@@ -34,22 +31,16 @@
 
     <div class="right">
 
-      <ul>
-        <li><a href="#">Kursmaterial</a></li>
-        <li><a href="reflection.php">Reflektioner</a></li>
-        <li><a href="goals.php">Mål</a></li>
-        <li><a href="#">Hem</a></li>
-      </ul>
+			<h1>Reflektion</h1>
 
-      <h1>Reflektion</h1>
+			<div id="reflectioncontent">
 
-      <div id="reflectioncontent">
+				<h2>2016-11-14 Målrubrik</h2>
+				<h2>2016-11-14 Målrubrik</h2>
+				<h2>2016-11-14 Målrubrik</h2>
+				<h2>2016-11-14 Målrubrik</h2>
+			</div>
 
-        <h2>2016-11-14 Målrubrik</h2>
-        <h2>2016-11-14 Målrubrik</h2>
-        <h2>2016-11-14 Målrubrik</h2>
-        <h2>2016-11-14 Målrubrik</h2>
-      </div>
 
     </div>
 

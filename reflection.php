@@ -1,7 +1,9 @@
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Reflection journal</title>
+    <?php
+			require('assets/php/templates/head.php');
+		?>	
+
   </head>
   <body>
 

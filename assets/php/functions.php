@@ -13,9 +13,9 @@ function registerPost($connection, $title, $content)
   }
 }
 
-function insertGoals($connection, $content) {
+function insertGoals($connection, $goalTitle, $goalDescription) {
 	$date = date('Y-m-d H:i:s');
-	if (dbPost($connection,"INSERT INTO goals (goalDate goalContent) VALUES ('$date', '$content')")) {
+	if (dbPost($connection,"INSERT INTO goals (goalDate, goalTitle, goalContent) VALUES ('$date', '$goalTitle', '$goalDescription')")) {
 		session_start();
 		$_SESSION['message'] = 'Ditt mål är sparat';
 		return true;

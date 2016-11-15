@@ -1,6 +1,8 @@
 <?php
-  include('assets/php/functions.php');
 	session_start();
+	require('assets/php/templates/head.php');
+  include('assets/php/functions.php');
+
 	$message = $_SESSION["message"] ?? "";
 	$error = $_SESSION["error"] ?? "";
 
@@ -21,58 +23,29 @@
   </head>
   <body>
 
-    <form action="assets/php/handlegoals.php" method="post">
+		<div class="goalflexcontainer">
 
-      <label for="vision">Det här vill jag med mitt ledarskap (vision):</label>
-      <br>
-      <textarea name="vision"></textarea>
-      <br>
-      <input type="submit" value="Spara" name="savevision" />
+	    <form class="goalform" action="assets/php/handlegoals.php" method="post">
 
-      <br>
-      <br>
+				<label for="goaltitle"><h1>Måltitel</h1></label>
+	      <input type="text" name="goaltitle"></input>
+				<br>
+	      <label for="goaldescripton"><h1>Målbeskrivning</h1></label>
+	      <textarea name="goaldescription"></textarea>
+	      <br>
+				<br>
+				<input type="submit" value="Spara" name="savegoal" />
+				<br>
 
-      <label for="goal1">Vad vill jag åstadkomma med min verksamhet?</label>
-      <br>
-      <textarea name="goal1"></textarea>
-      <br>
-      <input type="submit" value="Spara" name="savegoal1" />
-      <?php
+		</div>
 
 
-
-      ?>
-      <br>
-      <br>
-
-      <label for="goal2">Vilka konkreta saker måste jag ta tag i (lösa, utveckla, förbättra)?</label>
-      <br>
-      <textarea name="goal2"></textarea>
-      <br>
-      <input type="submit" value="Spara" name="savegoal2" />
 
       <br>
       <br>
 
-      <label for="goal3">Vilka av mina ledaregenskaper kan jag använda som bra resurser i det
-        arbetet?</label>
-      <br>
-      <textarea name="goal3"></textarea>
-      <br>
-      <input type="submit" value="Spara" name="savegoal3" />
 
-      <br>
-      <br>
 
-      <label for="goal4">I vilka delar behöver jag utvecklas eller anlita andra interna eller externa
-        resurser?</label>
-        <br>
-      <textarea name="goal4"></textarea>
-      <br>
-      <input type="submit" value="Spara" name="savegoal4" />
-
-      <br>
-      <br>
 
 
   </body>
