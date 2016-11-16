@@ -7,6 +7,7 @@ body {
   background-size: cover;
   width: 100%;
   height: 100%;
+  position: fixed;
 }
 
 div {
@@ -62,6 +63,20 @@ h2 {
 
 }
 
+h3 {
+  text-align: center;
+  font-family: 'DIN Alternate', sans-serif;
+  font-size: 23px;
+  color: #DA6965;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+
+p {
+  font-family: 'DIN Alternate', sans-serif;
+  font-size: 16px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -108,10 +123,29 @@ li a:hover {
   position: relative;
 }
 
+#lecturecontent {
+  width: 70%;
+  height: auto;
+  padding-top: 10px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.first, .second, .third, .fourth  {
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 50px;
+}
+
 /*STYLES FOR GOAL INPUT PAGE*/
 
 .goalflexcontainer {
   width: 100%;
+	height: 100%;
   margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -122,7 +156,7 @@ li a:hover {
 	width: 40%;
 	border-radius: 25px;
 }
-.goalform input {
+input[name=goaltitle], textarea[name=goaldescription] {
 	width: 60%;
 	margin: 0 auto;
 	display: block;
@@ -130,10 +164,6 @@ li a:hover {
 }
 textarea[name=goaldescription] {
 	height: 200px;
-	width: 60%;
-	margin: 0 auto;
-	display: block;
-	border-radius: 5px;
 }
 input[name=savegoal] {
 	margin: 0 auto;
