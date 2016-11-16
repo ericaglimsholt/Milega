@@ -34,8 +34,9 @@
     </div>
 
     <div class="right">
+
       <?php
-        require('assets/php/templates/header.php');
+        require('assets/php/templates/navbar.php');
       ?>
 
 			<h1>Reflektion</h1>
