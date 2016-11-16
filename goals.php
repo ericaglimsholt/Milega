@@ -7,11 +7,11 @@
 	$error = $_SESSION["error"] ?? "";
 
 	if ($message) {
-        print '<h1 style="color: green;">' . $message . '</h1>';
+        print '<h2 style="color: green;">' . $message . '</h2>';
         unset($_SESSION['message']);
   }
 	if ($error) {
-        print '<h1 style="color: red;">' . $error . '</h1>';
+        print '<h2 style="color: red;">' . $error . '</h2>';
         unset($_SESSION['error']);
   }
  ?>
@@ -27,12 +27,17 @@
 
 	    <form class="goalform" action="assets/php/handlegoals.php" method="post">
 
-				<label for="goaltitle"><h1>Måltitel</h1></label>
+				<label for="goaltitle"><h2>Måltitel</h2></label>
 	      <input type="text" name="goaltitle"></input>
 				<br>
-	      <label for="goaldescripton"><h1>Målbeskrivning</h1></label>
+	      <label for="goaldescripton"><h2>Målbeskrivning</h2></label>
 	      <textarea name="goaldescription"></textarea>
 	      <br>
+				<label for="fullfilled"><h2>Datum då målet ska vara uppfyllt</h2></label>
+	      <input type="text" name="fullfilled"></input>
+				<br>
+				<label for="reminder"><h2>Påminnelse</h2></label>
+	      <input type="text" name="reminder"></input>
 				<br>
 				<input type="submit" value="Spara" name="savegoal" />
 				<br>

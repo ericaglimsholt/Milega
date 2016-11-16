@@ -110,7 +110,6 @@ li a:hover {
 
 .goalflexcontainer {
   width: 100%;
-	height: 100%;
   margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -121,7 +120,7 @@ li a:hover {
 	width: 40%;
 	border-radius: 25px;
 }
-input[name=goaltitle], textarea[name=goaldescription] {
+.goalform input {
 	width: 60%;
 	margin: 0 auto;
 	display: block;
@@ -129,6 +128,10 @@ input[name=goaltitle], textarea[name=goaldescription] {
 }
 textarea[name=goaldescription] {
 	height: 200px;
+	width: 60%;
+	margin: 0 auto;
+	display: block;
+	border-radius: 5px;
 }
 input[name=savegoal] {
 	margin: 0 auto;
