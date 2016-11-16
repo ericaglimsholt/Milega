@@ -1,15 +1,16 @@
 <html>
-  <head>
+
     <?php
 			require('assets/php/templates/head.php');
-		?>	
+      require('assets/php/templates/header.php');
+		?>
 
-  </head>
+
   <body>
 
 <?php
 
-require("functions.php");
+require("assets/php/functions.php");
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
   if ($_POST["title"] !== "" && $_POST["content"] !== "") {
