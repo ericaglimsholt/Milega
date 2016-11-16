@@ -4,6 +4,7 @@
 
     <?php
 			require('assets/php/templates/head.php');
+			require('assets/php/functions.php')
 		?>
 
   </head>
@@ -24,11 +25,8 @@
       <h1>Mål</h1>
 
       <div id="goalcontent">
+      <?php  getGoalTitle($connection, 4); ?>
 
-        <h2>2016-11-14 Målrubrik</h2>
-        <h2>2016-11-14 Målrubrik</h2>
-        <h2>2016-11-14 Målrubrik</h2>
-        <h2>2016-11-14 Målrubrik</h2>
       </div>
 
     </div>

@@ -25,3 +25,11 @@ function insertGoals($connection, $goalTitle, $goalDescription, $fulfilled, $rem
 	return false;
 
 }
+
+function getGoalTitle($connection, $repeats) {
+	$getGoalTitles = dbGet($connection, "SELECT * FROM goals");
+
+	for ($i = 0; $i < $repeats; $i++) {
+		print '<h2>' . $getGoalTitles[$i]['goalTitle'] . '</h2>';
+	}
+}

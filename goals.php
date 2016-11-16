@@ -35,10 +35,10 @@
 	      <textarea name="goaldescription"></textarea>
 	      <br>
 				<label for="fullfilled"><h2>Datum då målet ska vara uppfyllt</h2></label>
-	      <input type="text" name="fullfilled"></input>
+	      <input type="date" name="fullfilled"></input>
 				<br>
 				<label for="reminder"><h2>Påminnelse</h2></label>
-	      <input type="text" name="reminder"></input>
+	      <input type="date" name="reminder"></input>
 				<br>
 				<input type="submit" value="Spara" name="savegoal" />
 				<br>
