@@ -1,6 +1,7 @@
 
 <html>
   <head>
+
     <?php
 			require('assets/php/templates/head.php');
 		?>
@@ -9,6 +10,9 @@
   <body>
 
 
+    <?php
+      require('assets/php/templates/header.php');
+    ?>
 
     <div class="content">
     <div class="left">
