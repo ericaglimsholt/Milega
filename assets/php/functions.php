@@ -27,7 +27,7 @@ function insertGoals($connection, $goalTitle, $goalDescription, $fulfilled, $rem
 }
 
 function getGoalTitle($connection, $repeats) {
-	$getGoalTitles = dbGet($connection, "SELECT * FROM goals");
+	$getGoalTitles = dbGet($connection, "SELECT * FROM goals ORDER BY goalDate DESC");
 
 	for ($i = 0; $i < $repeats; $i++) {
 		print '<h2>' . $getGoalTitles[$i]['goalTitle'] . '</h2>';
