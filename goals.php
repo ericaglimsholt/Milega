@@ -1,4 +1,5 @@
 <?php
+	//bulle
 	session_start();
 	require('assets/php/templates/head.php');
   include('assets/php/functions.php');
