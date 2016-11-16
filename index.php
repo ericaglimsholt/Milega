@@ -1,6 +1,7 @@
 
 <html>
   <head>
+
     <?php
 			require('assets/php/templates/head.php');
 		?>
@@ -10,8 +11,11 @@
 
 
 
+
     <div class="content">
     <div class="left">
+
+
 
       <ul>
         <li style="float:left;"><a href="#">Logotyp :)</a></li>
@@ -31,6 +35,10 @@
 
     <div class="right">
 
+      <?php
+        require('assets/php/templates/navbar.php');
+      ?>
+
 			<h1>Reflektion</h1>
 
 			<div id="reflectioncontent">
@@ -39,6 +47,9 @@
 				<h2>2016-11-14 Målrubrik</h2>
 				<h2>2016-11-14 Målrubrik</h2>
 				<h2>2016-11-14 Målrubrik</h2>
+
+
+
 			</div>
 
 
