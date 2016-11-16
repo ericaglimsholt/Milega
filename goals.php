@@ -2,6 +2,7 @@
 	//bulle
 	session_start();
 	require('assets/php/templates/head.php');
+	require('assets/php/templates/header.php');
   include('assets/php/functions.php');
 
 	$message = $_SESSION["message"] ?? "";

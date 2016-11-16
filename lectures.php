@@ -34,18 +34,15 @@ window.smoothScroll = function(target) {
 
   </head>
   <body>
-
+    <?php
+      require('assets/php/templates/header.php');
+    ?>
 
 
 
     <div class="content">
     <div class="left">
 
-
-
-      <ul>
-        <li style="float:left;"><a href="#">Logotyp :)</a></li>
-      </ul>
 
 
       <h1>Välj bilaga:</h1>
@@ -66,9 +63,7 @@ window.smoothScroll = function(target) {
 
     <div class="right">
 
-      <?php
-        require('assets/php/templates/navbar.php');
-      ?>
+
 
         <h1>Kursmaterial</h1>
 			  <div id="lecturecontent">
