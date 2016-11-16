@@ -10,12 +10,12 @@
   <body>
 
 
-    <?php
-      require('assets/php/templates/header.php');
-    ?>
+
 
     <div class="content">
     <div class="left">
+
+
 
       <ul>
         <li style="float:left;"><a href="#">Logotyp :)</a></li>
@@ -34,6 +34,9 @@
     </div>
 
     <div class="right">
+      <?php
+        require('assets/php/templates/header.php');
+      ?>
 
 			<h1>Reflektion</h1>
 
