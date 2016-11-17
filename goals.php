@@ -26,16 +26,16 @@ if ($error) {
 	<div class="goalflexcontainer">
 		<form class="goalform" action="assets/php/handlegoals.php" method="post">
 
-			<label for="goaltitle">Måltitel</label>
+			<label for="goaltitle"><h2 style="text-align:center;">Måltitel:</h2></label>
 			<input type="text" name="goaltitle"></input>
 			<br>
-			<label for="goaldescripton">Målbeskrivning</label>
+			<label for="goaldescripton"><h2 style="text-align:center;">Målbeskrivning:</h2></label>
 			<textarea name="goaldescription"></textarea>
 			<br>
-			<label for="fullfilled">Datum då målet ska vara uppfyllt</label>
+			<label for="fullfilled"><h2 style="text-align:center;">Datum då målet ska vara uppfyllt:</h2></label>
 			<input type="date" name="fullfilled"></input>
 			<br>
-			<label for="reminder">Påminnelse</label>
+			<label for="reminder"><h2 style="text-align:center;">Påminnelse:</h2></label>
 			<input type="date" name="reminder"></input>
 			<br>
 			<label for="done">Mål avklarat</label>

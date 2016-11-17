@@ -184,14 +184,28 @@ footer {
 	margin-top: 50px;
 	padding: 20px;
 }
+
+.goalform p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 22px;
+}
+
 .goalform input, textarea	 {
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 	display: block;
 	border-radius: 5px;
 }
+
+.goalform input, textarea	p {
+font-family: 'Rubik', sans-serif;
+font-size: 22px;
+}
+
 textarea[name=goaldescription] {
 	height: 200px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 22px;
 }
 input[name=savegoal] {
 	margin: 0 auto;
@@ -199,7 +213,38 @@ input[name=savegoal] {
 	background: white;
 	width: 100px;
 }
+
+input[name=goaltitle],[name=goaldescription], [name=fullfilled], [name=reminder] {
+  background: white;
+  border: none;
+  height: auto;
+  outline: none;
+  padding: 10px;
+}
+
+input[name=goaltitle], [name=goaldescription], [name=fullfilled], [name=reminder]:focus {
+  background: white;
+  border: none;
+
+}
+
 .goalform label {
 	text-align: center;
 	display: block;
+}
+
+input[name=savegoal] {
+  background: white;
+  border: none;
+  height: auto;
+  outline: none;
+  padding: 10px;
+  border: 3px solid white;
+}
+
+
+input[name=savegoal]:hover {
+  background: #9CCAC7;
+  color: white;
+  border: 3px solid white;
 }
