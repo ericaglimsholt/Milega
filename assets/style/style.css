@@ -10,6 +10,7 @@ body {
   height: 100%;
 	margin: 0;
 	padding: 0;
+
 }
 
 .content, .left, .right {
@@ -82,11 +83,8 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: none;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-size: 12px;
+    font-family: 'DIN Alternate', sans-serif;
+    font-size: 17px;
 }
 
 li {
@@ -95,7 +93,7 @@ li {
 
 li a {
     display: inline-block;
-    color: black;
+    color: #9CCAC7;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -104,6 +102,13 @@ li a {
 li a:hover {
     color: red;
 }
+
+#piechart {
+  width: 50%;
+  margin: auto;
+  display: block;
+}
+
 
 /* NAVBAR*/
 
@@ -114,6 +119,16 @@ nav {
 nav li a {
 	padding: 0 15px;
 	line-height: 50px;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  width: 99%;
+  padding: 10px;
 }
 
 #goalcontent {
@@ -145,10 +160,10 @@ nav li a {
 .first, .second, .third, .fourth  {
   width: 100%;
   height: auto;
-  padding-top: 10px;
+  padding-top: 0px;
   margin: 0 auto;
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
 
 /*STYLES FOR GOAL INPUT PAGE*/
