@@ -23,7 +23,7 @@
       <div id="goalcontent">
       <?php  getGoalTitle($connection, 4); ?>
       </div>
-    </div>
+      </div
 
 
     </div>
