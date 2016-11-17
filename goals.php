@@ -38,6 +38,9 @@ if ($error) {
 			<label for="reminder">Påminnelse</label>
 			<input type="date" name="reminder"></input>
 			<br>
+			<label for="done">Mål avklarat</label>
+			<input type="checkbox" name="done" value="1"></input>
+			<br>
 			<input type="submit" value="Spara" name="savegoal" />
 			<br>
 		</div>

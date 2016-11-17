@@ -35,10 +35,7 @@
 
 			<div id="reflectioncontent">
 
-				<h2>2016-11-14 Målrubrik</h2>
-				<h2>2016-11-14 Målrubrik</h2>
-				<h2>2016-11-14 Målrubrik</h2>
-				<h2>2016-11-14 Målrubrik</h2>
+				<div id="chart" class="ct-chart ct-perfect-fourth"></div>
 
 
 
@@ -49,6 +46,6 @@
 
     </div>
   </div>
-
+  <script src="/assets/js/bower_components/chartist/dist/chartist.min.js"></script>
   </body>
 </html>
