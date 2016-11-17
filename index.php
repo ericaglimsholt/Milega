@@ -39,7 +39,7 @@
 
 				<div id="chart" class="ct-chart ct-perfect-fourth"></div>
 
-				<img src="../../images/piechart.png" id="piechart" />
+				
 
 
 
@@ -51,7 +51,7 @@
     </div>
   </div>
 
-  <script src="/assets/js/bower_components/chartist/dist/chartist.min.js"></script>
+
 
 <footer>
   <?php
