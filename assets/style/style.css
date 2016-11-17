@@ -82,11 +82,8 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: none;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-size: 12px;
+    font-family: 'DIN Alternate', sans-serif;
+    font-size: 17px;
 }
 
 li {
@@ -95,7 +92,7 @@ li {
 
 li a {
     display: inline-block;
-    color: black;
+    color: #9CCAC7;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
