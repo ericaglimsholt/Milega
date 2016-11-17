@@ -25,6 +25,7 @@
 
       </div>
 
+
     </div>
 
     <div class="right">
@@ -46,6 +47,11 @@
 
     </div>
   </div>
+<footer>
+  <?php
+    require('assets/php/templates/footer.php');
+  ?>
+</footer>
 
   </body>
 </html>

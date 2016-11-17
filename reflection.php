@@ -48,7 +48,11 @@ $message = $_SESSION["message"] ?? "";
       <input type="submit" name="submit" value="Skicka">
     </form>
 
-
+    <footer>
+      <?php
+        require('assets/php/templates/footer.php');
+      ?>
+    </footer>
 
   </body>
 </html>

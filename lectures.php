@@ -131,5 +131,11 @@ window.smoothScroll = function(target) {
     </div>
   </div>
 
+  <footer>
+    <?php
+      require('assets/php/templates/footer.php');
+    ?>
+  </footer>
+
   </body>
 </html>

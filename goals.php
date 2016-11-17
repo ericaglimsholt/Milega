@@ -43,5 +43,11 @@ if ($error) {
 		</div>
 		<br>
 		<br>
+
+		<footer>
+		  <?php
+		    require('assets/php/templates/footer.php');
+		  ?>
+		</footer>
 	</body>
 	</html>
