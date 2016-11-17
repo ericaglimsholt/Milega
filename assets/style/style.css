@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: linear-gradient(to bottom, transparent -100%, white 75%, white 75%, white 100%), url("../../../images/start.jpg") no-repeat center;
+  background: url("../../../images/bg.png") no-repeat center;
   background-size: cover;
 	background-attachment: fixed;
   width: 100%;
@@ -11,6 +11,10 @@ body {
 	margin: 0;
 	padding: 0;
 
+}
+
+a {
+  text-decoration: none;
 }
 
 .content, .left, .right {
