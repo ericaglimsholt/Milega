@@ -18,7 +18,7 @@
     <div class="left">
 
 
-      <h1>Mål</h1>
+      <h1>Mina mål</h1>
 
       <div id="goalcontent">
       <?php  getGoalTitle($connection, 4); ?>
@@ -31,7 +31,7 @@
 
 
 
-			<h1>Reflektion</h1>
+			<h1>Resultat</h1>
 
 			<div id="reflectioncontent">
 
