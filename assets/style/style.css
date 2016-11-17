@@ -145,10 +145,10 @@ nav li a {
 .first, .second, .third, .fourth  {
   width: 100%;
   height: auto;
-  padding-top: 10px;
+  padding-top: 0px;
   margin: 0 auto;
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
 
 /*STYLES FOR GOAL INPUT PAGE*/
