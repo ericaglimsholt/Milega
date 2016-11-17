@@ -19,11 +19,11 @@
 
 
       <h1>Mina mål</h1>
-      <a href="goal.php">
+
       <div id="goalcontent">
       <?php  getGoalTitle($connection, 4); ?>
+
       </div>
-    </div>
 
 
     </div>
@@ -37,11 +37,16 @@
 			<div id="reflectioncontent">
 
 
-				<div id="chart" class="ct-chart ct-perfect-fourth"></div>
-
-				
+				<div id="mainchart" class="ct-chart"></div>
 
 
+				<?php
+
+					getFulfilled($connection);
+					echo ',';
+					getUnFulfilled($connection);
+
+				 ?>
 
 			</div>
 
@@ -51,7 +56,7 @@
     </div>
   </div>
 
-
+  <script src="/assets/js/bower_components/chartist/dist/chartist.min.js"></script>
 
 <footer>
   <?php

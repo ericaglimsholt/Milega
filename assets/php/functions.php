@@ -33,3 +33,15 @@ function getGoalTitle($connection, $repeats) {
 		print '<h2>' . $getGoalTitles[$i]['goalTitle'] . '</h2>';
 	}
 }
+
+
+function getFulfilled($connection) {
+	$getFulfilled = dbGet($connection, "SELECT done FROM goals WHERE done = '1'");
+
+	echo '<div class="fulfilled">' . count($getFulfilled) . '</div>';
+}
+function getUnFulfilled($connection) {
+	$getUnFulfilled = dbGet($connection, "SELECT done FROM goals WHERE done = '0'");
+
+	echo '<div class="unfulfilled">' . count($getUnFulfilled) . '</div>';
+}
