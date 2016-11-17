@@ -42,7 +42,7 @@ h1 {
   font-size: 47px;
   /*letter-spacing: 3px;*/
   /*text-transform: uppercase;*/
-  color: red;
+  color: #DA6965;
   font-weight: bold;
 }
 
@@ -107,6 +107,10 @@ li a:hover {
   width: 50%;
   margin: auto;
   display: block;
+}
+
+#chart {
+  display: none;
 }
 
 
