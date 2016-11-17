@@ -19,11 +19,11 @@
 
 
       <h1>Mina mål</h1>
-
+      <a href="goal.php">
       <div id="goalcontent">
       <?php  getGoalTitle($connection, 4); ?>
-
       </div>
+    </div>
 
 
     </div>
