@@ -35,10 +35,7 @@
 
 			<div id="reflectioncontent">
 
-				<h2>2016-11-14 Målrubrik</h2>
-				<h2>2016-11-14 Målrubrik</h2>
-				<h2>2016-11-14 Målrubrik</h2>
-				<h2>2016-11-14 Målrubrik</h2>
+				<img src="../../images/piechart.png" id="piechart" />
 
 
 

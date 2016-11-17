@@ -102,6 +102,13 @@ li a:hover {
     color: red;
 }
 
+#piechart {
+  width: 50%;
+  margin: auto;
+  display: block;
+}
+
+
 /* NAVBAR*/
 
 nav {
