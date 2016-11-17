@@ -32,6 +32,18 @@ if ($error) {
 			<label for="goaldescripton"><h2 style="text-align:center;">Målbeskrivning:</h2></label>
 			<textarea name="goaldescription"></textarea>
 			<br>
+			<br>
+			<label for="reminder"><h2 style="text-align:center;">Delmål 1:</h2></label>
+			<input type="text" name="reminder"></input>
+			<br>
+			<br>
+			<label for="reminder"><h2 style="text-align:center;">Delmål 2:</h2></label>
+			<input type="text" name="reminder"></input>
+			<br>
+			<br>
+			<label for="reminder"><h2 style="text-align:center;">Delmål 3:</h2></label>
+			<input type="text" name="reminder"></input>
+			<br>
 			<label for="fullfilled"><h2 style="text-align:center;">Datum då målet ska vara uppfyllt:</h2></label>
 			<input type="date" name="fullfilled"></input>
 			<br>
