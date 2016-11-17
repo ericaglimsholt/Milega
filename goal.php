@@ -33,7 +33,7 @@
 
 
 
-        <h1>Mål 1</h1>
+        <h1>Mål rubrik</h1>
 			  <div id="lecturecontent">
         <p>Beskrivning</p><br/>
         <p>Beskrivning 2</p><br/>

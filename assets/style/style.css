@@ -41,21 +41,16 @@ a {
 
 h1 {
   text-align: center;
-  font-family: 'DIN Alternate', sans-serif;
-  font-weight: 100;
+  font-family: 'Rubik', sans-serif;
   font-size: 47px;
-  /*letter-spacing: 3px;*/
-  /*text-transform: uppercase;*/
   color: #DA6965;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 h2 {
   text-align: left;
-  font-family: 'DIN Alternate', sans-serif;
-  font-weight: 100;
-  /*letter-spacing: 3px;*/
-  /*text-transform: uppercase;*/
+  font-family: 'Rubik', sans-serif;
+  font-weight: normal;
   font-size: 26px;
   margin-top: 20px;
   padding-left: 30px;
@@ -69,7 +64,7 @@ h2 {
 
 h3 {
   text-align: center;
-  font-family: 'DIN Alternate', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 23px;
   color: #DA6965;
   border-bottom: 1px solid black;
@@ -77,7 +72,7 @@ h3 {
 }
 
 p {
-  font-family: 'DIN Alternate', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 16px;
 }
 
@@ -87,7 +82,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: none;
-    font-family: 'DIN Alternate', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 17px;
 }
 
@@ -118,10 +113,8 @@ li a:hover {
 }
 
 
-/* NAVBAR*/
-
 nav {
-	height: 80px;
+	height: 60px;
 	background: white;
 }
 nav li a {
@@ -135,8 +128,9 @@ footer {
   bottom: 0;
   left: 0;
   background-color: white;
-  width: 99%;
-  padding: 10px;
+  width: 100%;
+  padding: 0px;
+  height: 60px;
 }
 
 #goalcontent {
@@ -190,14 +184,28 @@ footer {
 	margin-top: 50px;
 	padding: 20px;
 }
+
+.goalform p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 22px;
+}
+
 .goalform input, textarea	 {
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 	display: block;
 	border-radius: 5px;
 }
+
+.goalform input, textarea	p {
+font-family: 'Rubik', sans-serif;
+font-size: 22px;
+}
+
 textarea[name=goaldescription] {
 	height: 200px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 22px;
 }
 input[name=savegoal] {
 	margin: 0 auto;
@@ -205,7 +213,38 @@ input[name=savegoal] {
 	background: white;
 	width: 100px;
 }
+
+input[name=goaltitle],[name=goaldescription], [name=fullfilled], [name=reminder] {
+  background: white;
+  border: none;
+  height: auto;
+  outline: none;
+  padding: 10px;
+}
+
+input[name=goaltitle], [name=goaldescription], [name=fullfilled], [name=reminder]:focus {
+  background: white;
+  border: none;
+
+}
+
 .goalform label {
 	text-align: center;
 	display: block;
+}
+
+input[name=savegoal] {
+  background: white;
+  border: none;
+  height: auto;
+  outline: none;
+  padding: 10px;
+  border: 3px solid white;
+}
+
+
+input[name=savegoal]:hover {
+  background: #9CCAC7;
+  color: white;
+  border: 3px solid white;
 }
