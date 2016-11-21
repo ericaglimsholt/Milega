@@ -27,13 +27,18 @@
 		<div class="right">
 			<h1>Resultat</h1>
 			<div id="reflectioncontent">
-				<div id="mainchart" class="ct-chart"></div>
-				<?php
-					getFulfilled($connection);
-					echo ',';
-					getUnFulfilled($connection);
-				?>
-			</div>
+
+				<div class="chartwrap">
+					<div id="mainchart" class="ct-chart"></div>
+					<div class="labelwrap">
+						<?php
+							getFulfilled($connection);
+
+							getUnFulfilled($connection);
+						?>
+					</div>	
+				</div>
+		</div>
 		</div>
 	</div>
 
