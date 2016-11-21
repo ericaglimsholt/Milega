@@ -88,33 +88,24 @@ ul {
 
 li {
     float: right;
+    margin-top: 0px;
 }
 
-li a {
+li a{
     display: inline-block;
-    color: #9CCAC7;
+    color: #767D7E;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0px 16px;
     text-decoration: none;
 }
+
 
 li a:hover {
     color: red;
 }
 
-#piechart {
-  width: 50%;
-  margin: auto;
-  display: block;
-}
-
-#chart {
-  display: none;
-}
-
-
 nav {
-	height: 60px;
+	height: 80px;
 	background: white;
 }
 nav li a {
@@ -131,6 +122,16 @@ footer {
   width: 100%;
   padding: 0px;
   height: 60px;
+}
+
+#piechart {
+  width: 50%;
+  margin: auto;
+  display: block;
+}
+
+#chart {
+  display: none;
 }
 
 #goalcontent {
