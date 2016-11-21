@@ -5,10 +5,6 @@ var total = (parseInt(fulfilled) + parseInt(unfulfilled));
 var done = Math.round((parseInt(fulfilled) / total) * 100);
 var notDone = 100 - done;
 
-console.log(fulfilled);
-console.log(unfulfilled);
-console.log(done);
-console.log(total)
 new Chartist.Pie('.ct-chart', {
   series: [done, notDone],
 	labels: ['', '']

@@ -13,8 +13,9 @@ function registerPost($connection, $title, $content)
   }
 }
 
+
 function insertGoals($connection, $goalTitle, $goalDescription, $fulfilled, $reminder, $done) {
-	$date = date('Y-m-d H:i:s');
+	$date = date('Y-m-d');
 	if (dbPost($connection,"INSERT INTO goals (goalDate, goalTitle, goalContent, fulfilled, reminder, done) VALUES ('$date', '$goalTitle', '$goalDescription', '$fulfilled', '$reminder', '$done')")) {
 		session_start();
 		$_SESSION['message'] = 'Ditt mål är sparat';
@@ -26,11 +27,24 @@ function insertGoals($connection, $goalTitle, $goalDescription, $fulfilled, $rem
 
 }
 
+function updateGoals($connection, $goalId, $goalTitle, $goalDescription, $fulfilled, $reminder, $done) {
+	$updated = date('Y-m-d H:i:s');
+	if (dbPost($connection,"UPDATE goals SET goalTitle = '$goalTitle', goalContent = '$goalDescription', fulfilled = '$fulfilled', reminder = '$reminder', done = '$done', updated = '$updated' WHERE goalId = '$goalId'")) {
+		session_start();
+		$_SESSION['message'] = 'Ditt mål är sparat';
+		return true;
+	}
+
+
+	return false;
+
+}
+
 function getGoalTitle($connection, $repeats) {
-	$getGoalTitles = dbGet($connection, "SELECT * FROM goals ORDER BY goalDate DESC");
+	$getGoalTitles = dbGet($connection, "SELECT * FROM goals ORDER BY goalId DESC");
 
 	for ($i = 0; $i < $repeats; $i++) {
-		print '<h2>' . $getGoalTitles[$i]['goalTitle'] . '</h2>';
+		print '<div id="' . $getGoalTitles[$i]['goalId'] . '" class="titleContainer">' . $getGoalTitles[$i]['goalTitle'] . '</div>';
 	}
 }
 
