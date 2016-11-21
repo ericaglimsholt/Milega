@@ -1,3 +1,8 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
 html {
 
 }
@@ -189,7 +194,41 @@ footer {
   padding-bottom: 0px;
 }
 
+/*STYLES FOR LANDING PAGE CHART LABELS*/
+.chartwrap {
+	width: 158px;
+	margin: 0 auto;
+}
+.fulfilled, .unfulfilled {
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+
+}
+
+.fulfilled {
+background: #7ac2ba;
+}
+.unfulfilled {
+background: #e2454a;
+}
+
 /*STYLES FOR GOAL INPUT PAGE*/
+
+#titleContainer {
+	text-align: left;
+  font-family: 'Rubik', sans-serif;
+  font-weight: normal;
+  font-size: 26px;
+  margin-top: 20px;
+  padding-left: 30px;
+  background-color: #9CCAC7;
+  color: white;
+  border-radius: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
 .goalflexcontainer {
   width: 100%;

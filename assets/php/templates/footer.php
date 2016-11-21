@@ -6,3 +6,12 @@
 		<li><a href="http://www.milega.se/om-milega">FAQ</a></li>
 	</ul>
 </nav>
+
+
+<!--SCRIPTS-->
+
+<script src="/assets/js/bower_components/chartist/dist/chartist.min.js"></script>
+
+<script src="/assets/js/custom/mainchart.js"></script>
+
+<script src="/assets/js/custom/goalajax.js"></script>

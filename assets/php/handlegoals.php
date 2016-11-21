@@ -14,9 +14,9 @@ require('functions.php');
 				session_start();
 			  $_SESSION['error'] = 'Fyll ditt mål innan du sparar';
 
-			
+
 
       }
     }
-		header('Location: /goals.php');
+		header('Location: /newgoal.php');
   }
