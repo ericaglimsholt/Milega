@@ -187,10 +187,10 @@ footer {
 }
 
 .fulfilled {
-background: green;
+background: #7ac2ba;
 }
 .unfulfilled {
-background: red;
+background: #e2454a;
 }
 
 /*STYLES FOR GOAL INPUT PAGE*/
