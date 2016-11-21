@@ -198,8 +198,12 @@ footer {
 	justify-content: center;
 	align-items: center;
 }
+
+.goalflexcontainer h2 {
+  width: 97%;
+}
 .goalform {
-	background: #9CCAC7;
+	background: none;
 	width: 40%;
 	border-radius: 25px;
 	margin-top: 50px;
@@ -209,6 +213,7 @@ footer {
 .goalform p {
   font-family: 'Rubik', sans-serif;
   font-size: 22px;
+  text-align: center;
 }
 
 .goalform input, textarea	 {

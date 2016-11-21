@@ -30,7 +30,7 @@ function getGoalTitle($connection, $repeats) {
 	$getGoalTitles = dbGet($connection, "SELECT * FROM goals ORDER BY goalDate DESC");
 
 	for ($i = 0; $i < $repeats; $i++) {
-		print '<h2>' . $getGoalTitles[$i]['goalTitle'] . '</h2>';
+		print '<img src="images/date.png" class="imgdate"/>' . '<h2>' . $getGoalTitles[$i]['goalTitle'] . '</h2>';
 	}
 }
 

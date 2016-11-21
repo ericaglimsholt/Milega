@@ -18,12 +18,10 @@
 			<h1>Aktiva mål</h1>
 
 			<div class="goalcontent">
-				<div class="one">
-					<img src="images/date.png" class="imgdate" />
-				</div>
-				<div class="two">
+
 				<?php  getGoalTitle($connection, 4); ?>
-			</div>
+
+
 			</div>
 		</div>
 		<div class="right">
