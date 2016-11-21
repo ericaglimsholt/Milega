@@ -44,11 +44,12 @@ function getGoalTitle($connection, $repeats) {
 	$getGoalTitles = dbGet($connection, "SELECT * FROM goals ORDER BY goalId DESC");
 
 	for ($i = 0; $i < $repeats; $i++) {
-<<<<<<< HEAD
-		print '<img src="images/date.png" class="imgdate"/>' . '<h2>' . $getGoalTitles[$i]['goalTitle'] . '</h2>';
-=======
+
+
+		print '<div class="imgdate">' . $getGoalTitles[$i]['fulfilled'] . '</div>';
+
 		print '<div id="' . $getGoalTitles[$i]['goalId'] . '" class="titleContainer">' . $getGoalTitles[$i]['goalTitle'] . '</div>';
->>>>>>> origin/ajax
+
 	}
 }
 

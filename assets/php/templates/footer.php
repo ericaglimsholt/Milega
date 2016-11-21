@@ -6,8 +6,7 @@
 		<li><a href="http://www.milega.se/om-milega">FAQ</a></li>
 	</ul>
 </nav>
-<<<<<<< HEAD
-=======
+
 
 
 <!--SCRIPTS-->
@@ -17,4 +16,3 @@
 <script src="/assets/js/custom/mainchart.js"></script>
 
 <script src="/assets/js/custom/goalajax.js"></script>
->>>>>>> origin/ajax
