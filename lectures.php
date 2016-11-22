@@ -37,26 +37,18 @@ window.smoothScroll = function(target) {
     <?php
       require('assets/php/templates/header.php');
     ?>
+<div class="content">
+<div class="left">
 
 
-
-    <div class="content">
-    <div class="left">
-
-
-
-      <h1>Välj bilaga:</h1>
-
-      <div id="goalcontent">
+<h1>Välj bilaga:</h1>
+       <div id="goalcontent">
 
         <div class="first" onclick="smoothScroll(document.getElementById('first'))"><h2>Mina styrkor och utvecklingsområden</h2></div>
         <div class="second" onclick="smoothScroll(document.getElementById('second'))"><h2>Ledarkompetenshjulet</h2></div>
         <div class="third" onclick="smoothScroll(document.getElementById('third'))"><h2>Intra- och interpersonell kommunikation</h2></div>
 
         <div class="fourth" onclick="smoothScroll(document.getElementById('fourth'))"><h2>Frågeteknik</h2></div>
-
-
-
       </div>
 
     </div>
@@ -64,9 +56,8 @@ window.smoothScroll = function(target) {
     <div class="right">
 
 
-
+			  <div class="lecturecontent">
         <h1>Kursmaterial</h1>
-			  <div id="lecturecontent">
         <div class="first" id="first">
         <h3>Mina styrkor och utvecklingsområden</h3>
         <p> Detta är första övningen du gör i att färdigställa målet med ditt ledarskap. Dokumentet kommer att vara levande under hela utbildningen och det är meningen att du skall fylla på allteftersom du tillför mer kunskaper om dig själv och vad du vill göra i din roll som ledare.

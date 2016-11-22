@@ -27,7 +27,7 @@ a {
   width: 100%;
   height: 100%;
 	top: 50px;
-  margin-top: 170;
+  margin-top: 70;
 
 }
 
@@ -43,7 +43,6 @@ a {
   background-color: none;
   overflow-y: auto;
   width: 50%;
-
 }
 
 h1 {
@@ -52,7 +51,6 @@ h1 {
   font-size: 47px;
   color: #DA6965;
   font-weight: normal;
-  margin-bottom: 100px;
 }
 
 h2 {
@@ -68,7 +66,6 @@ h2 {
   height: 48px;
   width: 190px;
   border: 10px solid #9BD1CE;
-
 }
 
 h3 {
@@ -167,22 +164,7 @@ footer a {
   display: none;
 }
 
-.goalcontent {
-  width: 40%;
-  height: 190px;
-  padding-top: 10px;
-  margin: 0 auto;
-  position: relative;
-}
 
-.one {
-  margin-top: 10px;
-  float: left;
-}
-
-.two {
-  float: right;
-}
 
 .imgdate {
   padding-top: 10px;
@@ -191,31 +173,8 @@ footer a {
   float: left;
 }
 
-#reflectioncontent {
-  width: 70%;
-  height: 190px;
-  padding-top: 10px;
-  margin: 0 auto;
-  position: relative;
-}
 
-#lecturecontent {
-  width: 70%;
-  height: auto;
-  padding-top: 10px;
-  margin: 0 auto;
-  position: relative;
-  padding-bottom: 50px;
-}
 
-.first, .second, .third, .fourth  {
-  width: 100%;
-  height: auto;
-  padding-top: 0px;
-  margin: 0 auto;
-  position: relative;
-  padding-bottom: 0px;
-}
 
 /*STYLES FOR LANDING PAGE CHART LABELS*/
 .chartwrap {
@@ -510,4 +469,61 @@ input[name=username], input[name=password] {
   margin-top: 20px;
   position: relative;
   left: 35%;
+}
+
+/* STYLES FOR LECTURE.PHP */
+
+
+#reflectioncontent {
+  width: 70%;
+  height: 190px;
+  padding-top: 10px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.lecturecontent {
+  width: 70%;
+  height: auto;
+  padding-top: 10px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.lecturecontent h3 {
+  font-weight: normal;
+  width: 100%;
+}
+
+.first, .second, .third, .fourth  {
+  width: 100%;
+  height: auto;
+  padding-top: 0px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 0px;
+}
+
+.first h2, .second h2, .third h2, .fourth h2 {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.goalcontent {
+  width: 40%;
+  height: 190px;
+  padding-top: 10px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.one {
+  margin-top: 10px;
+  float: left;
+}
+
+.two {
+  float: right;
 }
