@@ -246,6 +246,9 @@ background: #e2454a;
 	width: 230;
 	margin-left: 135px;
 	position: relative;
+	background: url('/images/greenopacity.png');
+	border-radius: 18px;
+	margin-top: -80px;
 
 }
 .partgoalouter {
@@ -258,16 +261,6 @@ background: #e2454a;
 }
 .titleContainerOuter, .imgdate {
 	margin: 10px;
-}
-.opacity {
-	background-color: rgba(122,194,187,0.4);
-	height: 200px;
-	width: 230;
-	z-index: 0;
-	margin-top: -70px;
-	left: 0;
-	border-radius: 18px;
-	margin-bottom: -300px;
 }
 .imgdate {
 	padding: 10px;
