@@ -44,7 +44,25 @@ function getGoalTitle($connection, $repeats) {
 	$getGoalTitles = dbGet($connection, "SELECT * FROM goals ORDER BY goalId DESC");
 
 	for ($i = 0; $i < $repeats; $i++) {
-		print '<div id="' . $getGoalTitles[$i]['goalId'] . '" class="titleContainer">' . $getGoalTitles[$i]['goalTitle'] . '</div>';
+
+
+
+		print '<div class="imgdate">' . $getGoalTitles[$i]['fulfilled'] . '</div>';
+
+		print '<div class="titleContainerOuter"><div id="' . $getGoalTitles[$i]['goalId'] . '" class="titleContainerInner">' . $getGoalTitles[$i]['goalTitle'] . '</div></div>';
+
+		print '<div class="partgoalcontainer">';
+
+		print '<div class="opacity"></div>';
+
+		print '<div class ="partgoalouter"><div class="partgoal"></div></div>';
+
+		print '<div class ="partgoalouter"><div class="partgoal"></div></div>';
+
+		print '</div>';
+
+
+
 	}
 }
 
@@ -52,10 +70,10 @@ function getGoalTitle($connection, $repeats) {
 function getFulfilled($connection) {
 	$getFulfilled = dbGet($connection, "SELECT done FROM goals WHERE done = '1'");
 
-	echo '<div class="fulfilled">' . count($getFulfilled) . '</div>';
+	echo count($getFulfilled);
 }
 function getUnFulfilled($connection) {
 	$getUnFulfilled = dbGet($connection, "SELECT done FROM goals WHERE done = '0'");
 
-	echo '<div class="unfulfilled">' . count($getUnFulfilled) . '</div>';
+	echo count($getUnFulfilled);
 }

@@ -1,6 +1,6 @@
 
 
-var ajaxShower = document.querySelectorAll('.titleContainer');
+var ajaxShower = document.querySelectorAll('.titleContainerInner');
 
 
 
