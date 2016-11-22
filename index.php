@@ -31,12 +31,18 @@
 				<div class="chartwrap">
 					<div id="mainchart" class="ct-chart"></div>
 					<div class="labelwrap">
-						<?php
-							getFulfilled($connection);
+						<div class="fulfilled"><?php getFulfilled($connection); ?></div>
 
-							getUnFulfilled($connection);
-						?>
-					</div>	
+						<div class="explain">Uppnått</div>
+
+
+						<div class="unfulfilled"><?php	getUnFulfilled($connection); ?></div>
+
+						<div class="explain">Ej uppnått</div>
+					</div>
+					<div class="labelwrap">
+						<div
+					</div>
 				</div>
 		</div>
 		</div>

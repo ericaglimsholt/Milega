@@ -10,7 +10,9 @@ new Chartist.Pie('.ct-chart', {
 	labels: ['', '']
 }, {
   donut: true,
-  donutWidth: 30,
+  donutWidth: 45,
   startAngle: 270,
-  showLabel: true
+  showLabel: true,
+	width: 250,
+	height: 250
 });

@@ -134,6 +134,7 @@ footer {
   height: 60px;
 }
 
+<<<<<<< HEAD
 #piechart {
   width: 50%;
   margin: auto;
@@ -166,11 +167,18 @@ footer {
   margin: 0 auto;
   position: relative;
   float: left;
+=======
+#goalcontent {
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 385px;
+	margin: 0 auto;
+>>>>>>> ajax
 }
 
 #reflectioncontent {
   width: 70%;
-  height: 190px;
   padding-top: 10px;
   margin: 0 auto;
   position: relative;
@@ -196,15 +204,42 @@ footer {
 
 /*STYLES FOR LANDING PAGE CHART LABELS*/
 .chartwrap {
-	width: 158px;
+	width:250px;
 	margin: 0 auto;
 }
+.ct-series-b .ct-slice-donut {
+	stroke: #7ac2ba;
+}
+.ct-series-a .ct-slice-donut {
+	stroke: #e2454a;
+}
 .fulfilled, .unfulfilled {
-	width: 50%;
+	width: 50px;
+	height: 50px;
 	display: inline-block;
 	text-align: center;
 	padding: 5px;
+	border-radius: 100%;
+	margin: 0 14.5px;
+	color: rgba(0,0,0,0);
+}
+.labelwrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 100px;
+	margin-top: 30px;
 
+}
+.explain {
+	width: 50%;
+	text-align: center;
+	color: #636A6B;
+	font-size: 17px;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+	margin: 10px 0;
 }
 
 .fulfilled {
@@ -216,8 +251,77 @@ background: #e2454a;
 
 
 
+
 .titleContainer {
 	background: #7AC2BB;
+
+/* MENY */
+.titleContainerOuter {
+	background:#9BD1CE;
+	border-radius: 18px;
+	padding: 10px;
+	text-align: center;
+	height: 70px;
+	width: 230px;
+	display: inline-block;
+	position: relative;
+}
+.titleContainerInner {
+	border-radius: 8px;
+	background: #7AC2BB;
+	height: 100%;
+	font-size: 15px;
+	color: #F2F5F5;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+	line-height: 50px;
+}
+
+.partgoalcontainer {
+	height: 200px;
+	width: 230;
+	margin-left: 135px;
+	position: relative;
+	background: url('/images/greenopacity.png');
+	border-radius: 18px;
+	margin-top: -80px;
+
+}
+.partgoalouter {
+	width: 180px;
+	height: 50px;
+	background: #6F7677;
+	margin: 10px auto;
+	border-radius: 18px;
+	z-index: 3;
+}
+.titleContainerOuter, .imgdate {
+	margin: 10px;
+}
+.imgdate {
+	padding: 10px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 15px;
+	font-family: 'Rubik', sans-serif;
+	color: #7AC2BB;
+	position: relative;
+	display: inline-block;
+}
+.imgdate, .imgdate::after {
+	height: 70px;
+	width: 115px;
+	background: url('/images/icn_datum_bend.svg') no-repeat;
+}
+
+.imgdate::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotate(180deg);
+
+
 }
 
 /*STYLES FOR GOAL INPUT PAGE*/
