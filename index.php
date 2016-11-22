@@ -36,7 +36,7 @@
 
 							getUnFulfilled($connection);
 						?>
-					</div>	
+					</div>
 				</div>
 		</div>
 		</div>
@@ -44,11 +44,14 @@
 
 <script src="/assets/js/bower_components/chartist/dist/chartist.min.js"></script>
 
+
+
 <footer>
 	<?php
 	require('assets/php/templates/footer.php');
 	?>
 </footer>
+
 
 
 </body>
