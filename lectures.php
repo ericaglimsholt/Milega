@@ -89,7 +89,7 @@ window.smoothScroll = function(target) {
 
 
 <h1>Välj bilaga:</h1>
-       <div class="goalcontent">
+       <div class="lecgoalcontent">
 
         <div class="first" onclick="smoothScroll(document.getElementById('first'))"><h2>Mina styrkor och utvecklingsområden</h2></div>
         <div class="second" onclick="smoothScroll(document.getElementById('second'))"><h2>Ledarkompetenshjulet</h2></div>
