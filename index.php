@@ -40,6 +40,10 @@
 						<div class="unfulfilled"><?php	getUnFulfilled($connection); ?></div>
 
 						<div class="explain">Ej uppnått</div>
+
+					</div>
+
+
 				</div>
 
 			</div>

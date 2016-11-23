@@ -254,6 +254,7 @@ background: #e2454a;
 	width: 230px;
 	display: inline-block;
 	position: relative;
+	z-index: 3;
 }
 .titleContainerInner {
 	border-radius: 8px;
@@ -274,7 +275,13 @@ background: #e2454a;
 	background: url('/images/greenopacity.png');
 	border-radius: 18px;
 	margin-top: -80px;
-
+	display: none;
+}
+.showpartgoal {
+	display: initial;
+}
+.margincontainer {
+	margin-top: 80px;
 }
 .partgoalouter {
 	width: 180px;
@@ -283,6 +290,18 @@ background: #e2454a;
 	margin: 10px auto;
 	border-radius: 18px;
 	z-index: 3;
+	font-size: 15px;
+	color: #F2F5F5;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	padding: 5px;
+}
+.partgoal {
+	background: #4F5758;
+	border-radius: 15px;
+	height: 100%;
+	line-height: 40px;
 }
 .titleContainerOuter, .imgdate {
 	margin: 10px;
@@ -313,6 +332,24 @@ background: #e2454a;
 
 }
 
+/*STYLES FOR NEW GOAL PAGE*/
+
+.goaltitleblock {
+	width: 512px;
+	height: 142px;
+	margin: 0 atuo;
+	background: url('/images/bg_green_mal.svg') no-repeat;
+}
+.flexwrap {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.goalbesk {
+	background: #EEF2F2;
+	width: 512px;
+}
 /*STYLES FOR GOAL INPUT PAGE*/
 
 #titleContainer {

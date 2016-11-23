@@ -16,3 +16,5 @@
 <script src="/assets/js/custom/mainchart.js"></script>
 
 <script src="/assets/js/custom/goalajax.js"></script>
+
+<script src="/assets/js/custom/blandat.js"></script>
