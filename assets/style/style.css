@@ -21,13 +21,15 @@ body {
 a {
   text-decoration: none;
 }
+.content {
+
+}
 
 .content, .left, .right {
 	position: fixed;
   width: 100%;
   height: 100%;
 	top: 50px;
-  margin-top: 70;
 
 }
 
@@ -245,6 +247,14 @@ background: #e2454a;
 	background: #7AC2BB;
 }
 /* MENY */
+
+.goalcontent {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 385px;
+	margin: 0 auto;
+}
 .titleContainerOuter {
 	background:#9BD1CE;
 	border-radius: 18px;
