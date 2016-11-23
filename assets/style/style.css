@@ -27,7 +27,7 @@ a {
   width: 100%;
   height: 100%;
 	top: 50px;
-  margin-top: 170;
+  margin-top: 70;
 
 }
 
@@ -43,7 +43,6 @@ a {
   background-color: none;
   overflow-y: auto;
   width: 50%;
-
 }
 
 h1 {
@@ -52,7 +51,6 @@ h1 {
   font-size: 47px;
   color: #DA6965;
   font-weight: normal;
-  margin-bottom: 100px;
 }
 
 h2 {
@@ -68,7 +66,6 @@ h2 {
   height: 48px;
   width: 190px;
   border: 10px solid #9BD1CE;
-
 }
 
 h3 {
@@ -78,6 +75,14 @@ h3 {
   color: #DA6965;
   border-bottom: 1px solid black;
   padding-bottom: 20px;
+}
+
+h4 {
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  color: #EEF2F2;
+  font-size: 36px;
+  font-weight: normal;
 }
 
 p {
@@ -95,6 +100,7 @@ ul {
     background-color: none;
     font-family: 'Rubik', sans-serif;
     font-size: 17px;
+
 }
 
 li {
@@ -108,14 +114,23 @@ li a{
     text-align: center;
     padding: 10px 16px;
     text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 5px;
+    margin-right: 10px;
 }
 
 li a:hover {
     color: red;
 }
 
+li img {
+  margin-top: 7px;
+  margin-right: 15px;
+}
+
 nav {
-	height: 80px;
+	height: 60px;
 	background: white;
 }
 nav li a {
@@ -134,7 +149,12 @@ footer {
   height: 60px;
 }
 
-<<<<<<< HEAD
+
+footer a {
+  color: #9CCAC7;
+  font-size: 13px;
+}
+
 #piechart {
   width: 50%;
   margin: auto;
@@ -145,37 +165,23 @@ footer {
   display: none;
 }
 
-.goalcontent {
-  width: 40%;
-  height: 190px;
-  padding-top: 10px;
-  margin: 0 auto;
-  position: relative;
-}
 
-.one {
-  margin-top: 10px;
-  float: left;
-}
-
-.two {
-  float: right;
-}
 
 .imgdate {
   padding-top: 10px;
   margin: 0 auto;
   position: relative;
   float: left;
-=======
+}
 #goalcontent {
   display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 385px;
 	margin: 0 auto;
->>>>>>> ajax
+
 }
+
 
 #reflectioncontent {
   width: 70%;
@@ -184,23 +190,6 @@ footer {
   position: relative;
 }
 
-#lecturecontent {
-  width: 70%;
-  height: auto;
-  padding-top: 10px;
-  margin: 0 auto;
-  position: relative;
-  padding-bottom: 50px;
-}
-
-.first, .second, .third, .fourth  {
-  width: 100%;
-  height: auto;
-  padding-top: 0px;
-  margin: 0 auto;
-  position: relative;
-  padding-bottom: 0px;
-}
 
 /*STYLES FOR LANDING PAGE CHART LABELS*/
 .chartwrap {
@@ -254,7 +243,7 @@ background: #e2454a;
 
 .titleContainer {
 	background: #7AC2BB;
-
+}
 /* MENY */
 .titleContainerOuter {
 	background:#9BD1CE;
@@ -422,4 +411,236 @@ input[name=savegoal]:hover {
   background: #9CCAC7;
   color: white;
   border: 3px solid white;
+}
+
+/* STYLES FOR NEW GOAL: */
+
+/* Set width and center */
+form {
+  background: #EEF2F2;
+  width: 512px;
+  margin: 0 auto;
+  position: relative;
+  overflow: scroll;
+}
+
+/* Set with and height to header */
+.imgcontainer {
+  width: 100%;
+  height: 168px;
+}
+
+/* Set style to header title */
+.imgcontainer h4 {
+  position: absolute;
+  margin: 0;
+  top: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Full width inputs with text styles */
+input[name=gtitle], textarea[name=gcontent], textarea[name=gnotes] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  box-sizing: border-box;
+  background:  #B0D9D5;
+  border-radius: 15px;
+  outline: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: black;
+}
+
+/* Set style to date input */
+input[type=date] {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  width: 100%;
+  display: inline-block;
+  padding-left: 12px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+}
+
+/* Set margin to container */
+.formcontainer {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/* Set button style to default */
+.formcontainer button {
+  background: none;
+  border: none;
+  margin-top: 20px;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
+/* Set buttons to center */
+.gbuttons {
+  text-align:center;
+  margin:auto;
+}
+
+/* Styles for image in buttons */
+.formcontainer button img {
+  width: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/* Sets rules for pop-up content */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 512px;
+    height: 100%;
+    overflow: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Set the content style */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid white;
+  width: 100%; /* Could be more or less, depending on screen size */
+}
+
+/* Set zoom animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* STYLES FOR LOGGING IN PAGE */
+
+/* Set style to main container */
+.incontainer {
+  width: 40%;
+  height: auto;
+  margin: auto;
+  margin-top: 100px;
+}
+
+/* Set style to welcome text */
+.incontainer p {
+  font-size: 21px;
+  color: #9CCAC7;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  margin-top: 0;
+  margin-bottom: 70px;
+}
+
+/* Changed marginal to welcome text */
+.incontainer h1 {
+  margin-bottom: 20px;
+}
+
+/* Styles for input form */
+input[name=username], input[name=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  box-sizing: border-box;
+  background:  #B0D9D5;
+  border-radius: 15px;
+  outline: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+.inform button {
+  color: #9CCAC7;
+  font-size: 23px;
+  font-family: 'Rubik', sans-serif;
+  background: none;
+  outline: none;
+  border: none;
+  width: 30%;
+  margin-top: 20px;
+  position: relative;
+  left: 35%;
+}
+
+/* STYLES FOR LECTURE.PHP */
+
+
+#reflectioncontent {
+  width: 70%;
+  height: 190px;
+  padding-top: 10px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.lecturecontent {
+  width: 70%;
+  height: auto;
+  padding-top: 10px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.lecturecontent h3 {
+  font-weight: normal;
+  width: 100%;
+}
+
+.first, .second, .third, .fourth  {
+  width: 100%;
+  height: auto;
+  padding-top: 0px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 0px;
+}
+
+.first h2, .second h2, .third h2, .fourth h2 {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.goalcontent {
+  width: 40%;
+  height: 190px;
+  padding-top: 10px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.one {
+  margin-top: 10px;
+  float: left;
+}
+
+.two {
+  float: right;
 }

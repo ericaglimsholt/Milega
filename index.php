@@ -33,28 +33,30 @@
 					<div class="labelwrap">
 						<div class="fulfilled"><?php getFulfilled($connection); ?></div>
 
+
 						<div class="explain">Uppnått</div>
 
 
 						<div class="unfulfilled"><?php	getUnFulfilled($connection); ?></div>
 
 						<div class="explain">Ej uppnått</div>
-					</div>
-					<div class="labelwrap">
-						<div
-					</div>
 				</div>
+
+			</div>
 		</div>
 		</div>
 	</div>
 
 <script src="/assets/js/bower_components/chartist/dist/chartist.min.js"></script>
 
+
+
 <footer>
 	<?php
 	require('assets/php/templates/footer.php');
 	?>
 </footer>
+
 
 
 </body>
