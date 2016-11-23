@@ -37,12 +37,59 @@ window.smoothScroll = function(target) {
     <?php
       require('assets/php/templates/header.php');
     ?>
+
+
+    <!-- The Modal -->
+    <div id="modal" class="modal">
+
+    	<!-- Form starts -->
+    	<form class="modal-content animate" action="Location: /" method="post">
+
+    		<!-- Header -->
+    		<div class="imgcontainer">
+    			<img src="images/header.svg" class="goalheader" />
+    			<h4>Skriv nytt mål</h4>
+    		</div>
+
+    		<!-- Input fields -->
+    		<div class="formcontainer">
+
+    			<label for="goaltitle"><p>Rubrik:</p></label><hr />
+    			<input type="text" name="gtitle" value="">
+
+    			<label for="goaldescripton"><p>Beskrivning av ditt mål:</p></label><hr />
+    			<textarea name="gcontent" rows="4" cols="40"></textarea>
+
+    			<label for="#"><p>Anteckningar:</p></label><hr />
+    			<textarea name="gnotes" rows="4" cols="40"></textarea>
+
+    			<!-- Input type date -->
+    			<label for="fullfilled"><p>Vilket datum ska målet vara uppfyllt?</p></label><hr />
+    			<input type="date" name="gdate" value="">
+
+    			<label for="reminder"><p>När vill du ha en påminnelse?</p></label><hr />
+    			<input type="date" name="greminder" value="">
+
+    			<!-- Submit buttons -->
+    			<div class="gbuttons">
+    			<button type="submit" name="gfinish"><img src="images/save.svg" /></button>
+    			<button type="submit" name="gremove" id="gremove"><img src="images/delete.svg" /></button>
+    			</div>
+
+    		<!-- Input fields ends -->
+    		</div>
+
+    	<!-- Form ends -->
+    	</form>
+    </div>
+
+
 <div class="content">
 <div class="left">
 
 
 <h1>Välj bilaga:</h1>
-       <div id="goalcontent">
+       <div class="goalcontent">
 
         <div class="first" onclick="smoothScroll(document.getElementById('first'))"><h2>Mina styrkor och utvecklingsområden</h2></div>
         <div class="second" onclick="smoothScroll(document.getElementById('second'))"><h2>Ledarkompetenshjulet</h2></div>
@@ -129,4 +176,22 @@ window.smoothScroll = function(target) {
   </footer>
 
   </body>
+
+  <script>
+
+  // Takes in the new goal
+  document.querySelector('.new').addEventListener("click", function(event){
+      document.getElementById('modal').style.display='block';
+      event.preventDefault();
+  });
+
+  // Takes out the new goal
+  document.getElementById("gremove").addEventListener("click", function(){
+      document.getElementById("modal").style.display = "none";
+  });
+
+
+
+</script>
+
 </html>
