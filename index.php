@@ -37,7 +37,7 @@
 						<div class="explain">Ej uppnått</div>
 					</div>
 					<div class="labelwrap">
-						<div
+						
 					</div>
 				</div>
 		</div>

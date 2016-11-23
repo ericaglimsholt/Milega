@@ -53,9 +53,13 @@ function getGoalTitle($connection, $repeats) {
 
 		print '<div class="partgoalcontainer">';
 
-		print '<div class ="partgoalouter"><div class="partgoal"></div></div>';
+		print '<div class="margincontainer">';
 
-		print '<div class ="partgoalouter"><div class="partgoal"></div></div>';
+		print '<div class ="partgoalouter"><div class="partgoal">Delmål 1</div></div>';
+
+		print '<div class ="partgoalouter"><div class="partgoal">Delmål 2</div></div>';
+
+		print '</div>';
 
 		print '</div>';
 

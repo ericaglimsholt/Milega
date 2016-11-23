@@ -1,54 +1,52 @@
 <?php
-	session_start();
-	require('assets/php/templates/header.php');
-	require('assets/php/templates/head.php');
-	require('assets/php/functions.php');
+session_start();
+require('assets/php/templates/header.php');
+require('assets/php/templates/head.php');
+require('assets/php/functions.php');
 
 
 
 ?>
 <html>
-  <head>
+<head>
 
 
 
-  </head>
-  <body>
+</head>
+<body>
 
 
 
 
-    <div class="content">
-    <div class="left">
+	<div class="content">
+		<div class="left">
+
+			<h1>Mina mål</h1>
+
+			<div id="goalcontent">
+				<?php  getGoalTitle($connection, 4); ?>
+			</div>
+		</div>
+
+		<div class="right">
 
 
-
-      <h1>Mina mål</h1>
-
-      <div id="goalcontent">
-      <?php  getGoalTitle($connection, 4); ?>
-
-      </div>
-
-    </div>
-
-    <div class="right">
-
+<!--GAMMAL MÅLSIDA
 			<div class="goalflexcontainer">
 				<form class="goalform" action="assets/php/updategoals.php" method="post">
 					<?php
 
-						$message = $_SESSION["message"] ?? "";
-						$error = $_SESSION["error"] ?? "";
+					$message = $_SESSION["message"] ?? "";
+					$error = $_SESSION["error"] ?? "";
 
-						if ($message) {
-							print '<h2 style="color: green;">' . $message . '';
-							unset($_SESSION['message']);
-						}
-						if ($error) {
-							print '<h2 style="color: red;">' . $error . '';
-							unset($_SESSION['error']);
-						}
+					if ($message) {
+						print '<h2 style="color: green;">' . $message . '';
+						unset($_SESSION['message']);
+					}
+					if ($error) {
+						print '<h2 style="color: red;">' . $error . '';
+						unset($_SESSION['error']);
+					}
 					?>
 					<label for="goaltitle"><h2 style="text-align:center;">Måltitel:</h2></label>
 					<input type="text" name="goaltitle" value=""></input>
@@ -85,31 +83,34 @@
 				<br>
 				<br>
 
-        <h1>Mål rubrik</h1>
+				<h1>Mål rubrik</h1>
+			</div>
+-->
 
-      </div>
+<!-- NY MÅLSIDA INNANFÖR right-->
+		<div class="flexwrap">
+			<div class="goaltitleblock"></div>
+			<div class="goalbesk">
 
-
-</div>
-
-
-
-
-
+				<p>Beskrivning av dit mål</p>
+				<hr>
+				<p>Anteckningar</p>
+				<hr>
 
 			</div>
+		</div>
+		</div>
+	</div>
+</div>
 
+</div>
+</div>
 
-    </div>
+<footer>
+	<?php
+	require('assets/php/templates/footer.php');
+	?>
+</footer>
 
-    </div>
-  </div>
-
-  <footer>
-    <?php
-      require('assets/php/templates/footer.php');
-    ?>
-  </footer>
-
-  </body>
+</body>
 </html>
