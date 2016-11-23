@@ -512,7 +512,7 @@ input[name=username], input[name=password] {
 }
 
 .goalcontent {
-  width: 40%;
+  width: 100%;
   height: 190px;
   padding-top: 10px;
   margin: 0 auto;
