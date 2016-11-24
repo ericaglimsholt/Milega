@@ -98,6 +98,10 @@ window.smoothScroll = function(target) {
         <div class="fourth" onclick="smoothScroll(document.getElementById('fourth'))"><h2>Frågeteknik</h2></div>
       </div>
 
+
+
+
+
     </div>
 
     <div class="right">
