@@ -40,13 +40,27 @@ $message = $_SESSION["message"] ?? "";
     }
 ?>
 
-    <h1>Write something and we will save it</h1>
 
-    <form action="<?php $_SERVER['PHP_SELF']?>" method="POST">
-      Rubrik:<input type="text" name="title" value=""> </br>
-      Innehåll:<input type="text" name="content" value=""> </br>
-      <input type="submit" name="submit" value="Skicka">
-    </form>
+
+	<div class="content">
+		<div class="left">
+      <h1>Navigation - mål</h1>
+             <div class="lecgoalcontent">
+                <div class="first"><h2>Mål 1</h2></div>
+                <div class="second"><h2>Mål 2</h2></div>
+                <div class="third" ><h2>Mål 3</h2></div>
+                <div class="fourth" ><h2>Mål 4</h2></div>
+            </div>
+
+		<div class="right">
+
+			</div>
+		</div>
+	</div>
+
+
+
+
 
     <footer>
       <?php
