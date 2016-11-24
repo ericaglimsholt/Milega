@@ -660,6 +660,10 @@ input[type=date] {
   margin-top: 100px;
 }
 
+.incontainer form {
+  background: none;
+}
+
 /* Set style to welcome text */
 .incontainer p {
   font-size: 21px;
@@ -691,6 +695,10 @@ input[name=username], input[name=password] {
   color: black;
 }
 
+.inform {
+  height: 250px;
+}
+
 .inform button {
   color: #9CCAC7;
   font-size: 23px;
@@ -698,10 +706,21 @@ input[name=username], input[name=password] {
   background: none;
   outline: none;
   border: none;
-  width: 30%;
+  width: 45%;
   margin-top: 20px;
   position: relative;
-  left: 35%;
+  left: 28%;
+}
+
+.inform button img:nth-child(1){
+  position: relative;
+  top: 10px;
+}
+
+.inform button img:nth-child(2){
+  transform: rotate(180deg);
+  position: relative;
+  top: 20px;
 }
 
 /* STYLES FOR LECTURE.PHP */
@@ -759,4 +778,11 @@ input[name=username], input[name=password] {
 
 .two {
   float: right;
+}
+
+
+/* STYLES FOR REFLECION.PHP */
+
+.reflectionmenu {
+  width: 70%;
 }
