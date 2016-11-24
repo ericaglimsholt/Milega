@@ -3,20 +3,21 @@ require('functions.php');
 
 
   if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if(isset($_POST['savegoal'])) {
-      if(!empty($_POST['goaltitle'] && !empty($_POST['goaldescription']) && !empty($_POST['fullfilled']) && !empty($_POST['reminder']))) {
-				$checkbox = $_POST['done'] ?? false;
-				if (!insertGoals($connection, $_POST['goaltitle'], $_POST['goaldescription'], $_POST['fullfilled'], $_POST['reminder'], $checkbox)) {
+    if(isset($_POST['gfinish'])) {
+      if(!empty($_POST['gtitle'] && !empty($_POST['gcontent']) && !empty($_POST['gnotes']) && !empty($_POST['gdate']) && !empty($_POST['greminder']))) {
+				$checkbox = $_POST['done'] ?? 0;
+				if (!insertGoals($connection, $_POST['gtitle'], $_POST['gcontent'], $_POST['gdate'], $_POST['greminder'], $checkbox, $_POST['gnotes'])) {
 
 				};
 
       } else {
 				session_start();
-			  $_SESSION['error'] = 'Fyll ditt mål innan du sparar';
+			  $_SESSION['error'] = 'Fyll i alla fält innan du sparar';
 
 
 
       }
     }
-		header('Location: /newgoal.php');
+		header("location:javascript://history.go(-1)");
+
   }

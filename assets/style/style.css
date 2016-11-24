@@ -134,6 +134,9 @@ li img {
 nav {
 	height: 60px;
 	background: white;
+	position: fixed;
+	width: 100%;
+	z-index: 3;
 }
 nav li a {
 	padding: 0 15px;
@@ -175,14 +178,7 @@ footer a {
   position: relative;
   float: left;
 }
-#goalcontent {
-  display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	width: 385px;
-	margin: 0 auto;
 
-}
 
 
 #reflectioncontent {
@@ -349,6 +345,13 @@ background: #e2454a;
 	height: 142px;
 	margin: 0 atuo;
 	background: url('/images/bg_green_mal.svg') no-repeat;
+	margin-top: 10px;
+	text-align: center;
+	line-height: 142px;
+	font-size: 36px;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+	color: #EEF2F2;
 }
 .flexwrap {
 	display: flex;
@@ -359,6 +362,58 @@ background: #e2454a;
 .goalbesk {
 	background: #EEF2F2;
 	width: 512px;
+	padding: 10px;
+}
+.dateblock {
+	background: url('/images/bg_green_datum.svg') no-repeat;
+	background-size: 100%;
+	height: 100px;
+	width: 512px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	font-size: 16px;
+	font-family: 'Rubik', sans-serif;
+	color: #EEF2F2;
+
+}
+.finished {
+	height: 100px;
+	background: #EEF2F2;
+	width: 512px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	font-family: 'Rubik', sans-serif;
+	color: #7AC2BB;
+}
+.ball {
+	height: 50px;
+	width: 50px;
+	background:	#7AC2BB;
+	border-radius: 50%;
+	margin-right: 10px;
+
+}
+.editblock {
+	background: #EEF2F2;
+	width: 512px;
+	display: flex;
+	align-items: center;
+	height: 100px;
+	justify-content: space-around;
+}
+
+.editblock img {
+	margin-bottom: 10px;
+}
+.editblock .col {
+	text-align: center;
+	font-size: 12px;
+	font-family: 'Lato', sans-serif;
+	color: black;
 }
 /*STYLES FOR GOAL INPUT PAGE*/
 
@@ -513,7 +568,21 @@ input[type=date] {
   outline: none;
   border: none;
 }
-
+.messagewrapper {
+	display: none;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 10;
+}
+.messagecontainer {
+	position:;
+	width: 200px;
+	height: 200px;
+	background: red;
+}
 /* Set margin to container */
 .formcontainer {
   margin-left: 40px;
