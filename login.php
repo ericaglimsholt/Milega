@@ -36,12 +36,12 @@
   <h1>Välkommen!</h1>
 
   <!-- Logging in form starts -->
-  <form class="inform" method="POST" action="assets/php/handlegoals.php">
+  <form class="inform" method="POST" action="index.php">
   <input type="text" name="username" value="" placeholder="Ditt användarnamn">
   <input type="password" name="password" value="" placeholder="Ditt lösenord">
 
   <!-- Submit button -->
-  <button type="submit" name="insubmit" src="index.php">Logga in</button>
+  <button type="submit" name="insubmit" src="index.php"><img src="images/icn_datum_bend.svg" />Logga in <img src="images/icn_datum_bend.svg" /></button>
   </form>
   <!-- Logging in form ends -->
 
